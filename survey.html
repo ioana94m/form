@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+</head>
+<body>
+
+<p id="description"></p>
+<form id="survey-form">
+  <h1 id="title">Contact us</h1>
+    <input id="name" type="text" value="" name="name" placeholder="Your name">
+    <input id="email" type="email" value="" placeholder="Email">
+    <input id="number" type="number" name="number" value="" min="18" max="65" placeholder="Age">
+ 
+  <p>Reason for contacting us: </p>
+  <div>
+    <input type="radio" name="reason" id="Products">
+    <label for="products">Products</label>
+  </div>
+  <div>
+    <input type="radio" name="reason" id="orders">
+    <label for="orders">Orders</label>
+  </div>
+  <div>
+    <input type="radio" name="reason" id="complaints">
+    <label for="complaints">Complaints</label>
+  </div>
+  <div>
+    <input type="radio" name="reason" id="employment">
+    <label for="employment">Employment</label>
+  </div>
+
+
+    <p>How did you hear about us?</p>
+    <div>
+    <input type="checkbox" id="social media" name="social media">
+    <label for="social media">Social media</label>
+  </div>
+  <div>
+    <input type="checkbox" id="TV" name="TV">
+    <label for="TV">TV</label>
+  </div>
+  <div>
+    <input type="checkbox" id="search engine" name="search engine">
+    <label for="search engine">Search Engine</label>
+  </div>
+  <div>
+    <input type="checkbox" id="word of mouth" name="word of mouth">
+    <label for="word of mouth">Word of mouth</label>
+  </div>
+  <div>
+    <input type="checkbox" id="other" name="other">
+    <label for="other">Other</label>
+  </div>
+
+ 
+    <span>When do you prefer to be contacted?</span>
+    <select id="dropdown" name="time">
+      <option>AM</option>
+      <option>PM</option>
+    </select>
+ 
+
+<textarea cols="60" rows="3">Leave your message here</textarea>
+
+<button id="submit">Submit</button>
+</form>
+<img src="https://images.squarespace-cdn.com/content/v1/54e66eb7e4b0165bdce969ab/1515440515360-4GTZYMDQBHHHG9I7C54R/ke17ZwdGBToddI8pDm48kBZ1c5W19ULsW4FGeJcrGB1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIydhUjsg8FRl4UNA6G2o6pQ2p298Mz3NRQBM2HD_viGMKMshLAGzx4R3EDFOm1kBS/contact-768x512.jpg?format=1500w">
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* gradient(left top, right bottom, color-stop(0%, rgba(30,29,31,1)), color-stop(100%, rgba(223,64,90,1))); */
+  background: -o-linear-gradient(-45deg, rgba(30,29,31,1) 0%, rgba(223,64,90,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(30,29,31,1) 0%, rgba(223,64,90,1) 100%);
+  background: linear-gradient(135deg, rgba(30,29,31,1) 0%, rgba(223,64,90,1) 100%);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+form {
+  color: white;
+  padding: 10px;
+  background-color:#D3BBA8;
+  
+}
+h1 {
+  text-align: center;
+  font-family: alex Brush;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+p, span {
+  display:-block;
+  font-size: 18px;
+  color: #C98863;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: alex Brush;
+  font-size: 25px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="number"] {
+  display: inline-block;
+}
+
+div {
+  display: block;
+}
+
+textarea {
+  display: block;
+  color:#47242B;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding-left: 10px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #6A2B36;
+  /* background-color: transparent; */
+  width: 100px;
+  color: white;
+  border: 2px ridge #C97068;
+  margin-top: 10px;
+}
+button:hover {
+  color: #2D2024;
+  background-color: #B38389;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+}
+img {
+  opacity: 0.5;
+  box-shadow: 10px 10px 5px #2F2024;
+  width: 414px;
+  height: 507.8px;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  form {
+    width: 80%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 425px) {
+  body {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  textarea {
+    width: 100%;
+  }
+  #description {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+}
